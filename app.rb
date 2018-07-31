@@ -5,3 +5,11 @@ class App < Sinatra::Base
     "My name is  "
   end
 end
+
+require_relative 'config/environment'
+
+class App < Sinatra::Base
+  get '/favorite' do
+    "My name is  "
+  end
+end
